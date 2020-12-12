@@ -15,7 +15,7 @@ Feature: Validate Stay Tab
   Scenario Outline: 
     When I press flights Tab
     And I fill in <city_origin> <city_destination> <checkInDate> <checkOutDate>
-    Then I am navigated to Flights Page
+    Then I am navigated to Flights Page Pleaseeeeee
 
     Examples: 
       | city_origin | city_destination | checkInDate    | checkOutDate   |
