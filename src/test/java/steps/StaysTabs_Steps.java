@@ -23,7 +23,7 @@ public class StaysTabs_Steps {
 	public void i_am_on_home_page() {
 		String expectedUrl = "https://www.expedia.com/";
 		commonActions.getUrl(expectedUrl);
-		Assert.assertEquals(commonActions.getCurrentUrl(), expectedUrl);
+		Assert.assertEquals(commonActions.getCurrentUrl(), "marimar");
 	}
 
 	@When("I fill in {string} {string} {string} {string}")
