@@ -9,6 +9,6 @@ import io.cucumber.junit.CucumberOptions;
 				glue = "steps",
 				dryRun = false,
 				monochrome = true)
-public class testRunner {
+public class testRunnerTest {
 
 }
