@@ -1,0 +1,6 @@
+actions\CommonActions.class
+elements\StaysTab_Elements.class
+steps\StaysTabs_Steps.class
+steps\CommonSteps.class
+testRunner\testRunner.class
+actions\StaysTab_Actions.class
