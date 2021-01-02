@@ -13,8 +13,8 @@ public class StaysTab_Actions {
 	private StaysTab_Elements e;
 	private CommonActions actions;
 
-	public StaysTab_Actions(CommonSteps steps,CommonActions actions) {
-		this.driver = steps.getDriver();
+	public StaysTab_Actions(CommonSteps commonsteps,CommonActions actions) {
+		this.driver = commonsteps.getDriver();
 		this.actions = actions;
 		e = new StaysTab_Elements(driver);
 	}
@@ -23,7 +23,7 @@ public class StaysTab_Actions {
 		
 		return actions.elementIsClicked(e.staysTab);
 	}
-
+	
 	
 	public void enterLocationDestination(String city, String location) {
 		e.goingTo.click();
@@ -77,9 +77,16 @@ public class StaysTab_Actions {
 	}
 
 	public void clickAddFlight() {
-		// click flightCheckBox
-
+		boolean a = actions.elementIsClicked(e.addFlightCheckBox);
+		System.out.println(a);
 	}
+	
+	public void enterLeavingFromAirport(String city) {
+		e.leavingFrom.click();
+		e.locationOrigin.sendKeys(city);
+	}
+	
+	
 
 	public void clickAddCar() {
 		// click carCheckBox

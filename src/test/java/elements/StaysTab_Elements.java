@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class StaysTab_Elements {
 	
-	private WebDriver driver;
 
 	@FindBy(xpath = "//span[text()='Stays']")
 	public WebElement staysTab;
@@ -37,8 +36,14 @@ public class StaysTab_Elements {
 	@FindBy(xpath = "//span[text()='Done']")
 	public WebElement calendarDoneButton;
 	
-	@FindBy(id = "add-flight-switch")
+	@FindBy(xpath = "//div//span[@class='uitk-flex-item uitk-flex-shrink-0 uitk-switch-control'][1]")
 	public WebElement addFlightCheckBox;
+	
+	@FindBy(xpath="//div//span[text()='Leaving from']")
+	public WebElement leavingFrom;
+	
+	@FindBy(id="location-field-origin")
+	public WebElement locationOrigin;
 	
 	@FindBy(id = "add-car-switch")
 	public WebElement addCarCheckBox;
@@ -50,7 +55,6 @@ public class StaysTab_Elements {
 	public WebElement searchButton;
 	
 	public StaysTab_Elements(WebDriver driver) {
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
